@@ -1,0 +1,9 @@
+python:
+    numpy>=1.21.0
+    opencv-python>=4.5.5.64
+    scipy>=1.7.3
+    PySide6>=6.4.0
+    pathlib>=1.0.1
+
+Cpp:
+    PCL≥1.14.1
