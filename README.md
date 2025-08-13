@@ -34,6 +34,14 @@ BatteryPilot/
 - Compile and run `DetectBattery.cpp` (requires PCL library)
 - Can read PLY format point cloud files to realize battery recognition and parameter extraction (center coordinates, axis direction, radius, etc.)
 
+## Requirements
+- Python 3.9.20
+- OpenCV (cv2)
+- NumPy
+- SciPy
+- PySide6 (for GUI)
+- The C++ file `DetectBattery.cpp` depends on the PCL library (Point Cloud Library), which needs to be installed and configured separately
+
 ## Notes
 - Ensure chessboard images are clear and captured from multiple angles before calibration
 - Robotic arm pose files must correspond one-to-one with calibration images
@@ -68,13 +76,21 @@ BatteryPilot/
 
 ### 2. 手眼标定
 - 根据机械臂与相机安装方式选择对应的脚本：
-  - 眼在手上：`Eye-in-hand-calibration.py` 或带UI的 `Eye_in_hand_with_UI.py`
-  - 其他安装方式：`Eye-on-hand-calibration.py`
+  - 眼在手内：`Eye-in-hand-calibration.py` 或带UI的 `Eye_in_hand_with_UI.py`
+  - 眼在手外：`Eye-on-hand-calibration.py`
 - 需准备：相机标定图像、机械臂位姿文件
 
 ### 3. 电池检测
 - 编译并运行 `DetectBattery.cpp`（依赖PCL库）
 - 可读取PLY格式点云文件，实现电池的识别与参数提取（中心坐标、轴线方向、半径等）
+
+## 环境要求
+- Python 3.9.20
+- OpenCV (cv2)
+- NumPy
+- SciPy
+- PySide6（用于GUI）
+- C++ 文件`DetectBattery.cpp`依赖PCL库（点云库），需单独安装配置
 
 ## 注意事项
 - 标定前需确保棋盘格图像清晰，多角度拍摄
