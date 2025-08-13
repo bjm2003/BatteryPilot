@@ -13,6 +13,8 @@ BatteryPilot/
 │   ├── Eye_in_hand_with_UI.py     # Eye-in-hand calibration with UI
 │   ├── Camera_calibration.py      # Camera calibration implementation
 │   └── Cam_cal_with_UI.py         # Camera calibration with UI
+├── calib_images                   # Referable calibration board image
+├── data_for_PCL                   # A test file in .ply format
 └── DetectBattery.cpp              # Battery detection (based on point cloud processing)
 ```
 
@@ -53,6 +55,8 @@ BatteryPilot/
 │   ├── Eye_in_hand_with_UI.py     # 带UI的眼在手上标定
 │   ├── Camera_calibration.py      # 相机标定实现
 │   └── Cam_cal_with_UI.py         # 带UI的相机标定
+├── calib_images                   # 可参考的标定板图片
+├── data_for_PCL                   # 一个.ply格式的测试文件
 └── DetectBattery.cpp              # 电池检测（基于点云处理）
 ```
 
